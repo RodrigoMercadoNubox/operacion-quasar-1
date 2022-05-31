@@ -7,7 +7,7 @@ import java.util.List;
 
 public class PosicionSatelite {
 
-    private List<Satelite> satellites;
+	private List<Satelite> satellites;
 
     public void setSatellites(List<Satelite> satellites) {
         this.satellites = satellites;
