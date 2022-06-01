@@ -86,3 +86,6 @@ Se creo un API REST en JAVA con SPRING BOOT Con la siguiente arquitecura:
 * Controller: Se definen los endpoint.
 * Services:  Logica de negocio para obtener la localización y mensaje secreto de los satelites.
 * Exceptions: Contiene metodo para controlar los errores controlados
+
+# PRUEBAS UNITARIAS
+Se utilizó JUnit para realizar las pruebas unitarias automatizadas
