@@ -16,6 +16,7 @@ import com.init.operacion.quasar.model.PosicionSatelite;
 import com.init.operacion.quasar.model.Satelite;
 
 @RestController
+@RequestMapping(path = "/api/v1/")
 public class InteligenciaRebeldeController {
 
 	@Autowired
@@ -24,7 +25,7 @@ public class InteligenciaRebeldeController {
 	@Autowired
 	private InteligenciaRebeldeInterface intelligenceService2;
 
-	@PostMapping(value = "/servers/{id}", consumes = { MediaType.APPLICATION_JSON_VALUE }, produces = {
+	@PostMapping(value = "/{id}", consumes = { MediaType.APPLICATION_JSON_VALUE }, produces = {
 			MediaType.APPLICATION_JSON_VALUE })
 	public ResponseEntity topSecret(RequestEntity<PosicionSatelite> requestEntitySatelite) {
 
@@ -36,7 +37,7 @@ public class InteligenciaRebeldeController {
 		}
 	}
 
-	@RequestMapping(value = "/servers/{id}/{name}", consumes = { MediaType.APPLICATION_JSON_VALUE }, produces = {
+	@RequestMapping(value = "/{id}/{name}", consumes = { MediaType.APPLICATION_JSON_VALUE }, produces = {
 			MediaType.APPLICATION_JSON_VALUE })
 	public ResponseEntity topsecret_split(@PathVariable("name") String name,
 			RequestEntity<Satelite> requestEntitySatelite) {
