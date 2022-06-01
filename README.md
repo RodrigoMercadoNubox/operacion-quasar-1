@@ -12,7 +12,7 @@ Posición de los satélites actualmente en servicio
 *	Sato: [500, 100]
 
 >Nivel 1
-######Crear un programa con las siguientes firmas:
+ Crear un programa con las siguientes firmas:
 
 // input: distancia al emisor tal cual se recibe en cada satélite
 // output: las coordenadas ‘x’ e ‘y’ del emisor del mensaje
@@ -70,7 +70,7 @@ RESPONSE CODE: 404
 
 >Nivel 3
 
-######Considerar que el mensaje ahora debe poder recibirse en diferentes POST al nuevo servicio /topsecret_split/, respetando la misma firma que antes. Por ejemplo:
+Considerar que el mensaje ahora debe poder recibirse en diferentes POST al nuevo servicio /topsecret_split/, respetando la misma firma que antes. Por ejemplo:
 
 POST →    /topsecret_split/{satellite_name}
 {
@@ -78,4 +78,4 @@ POST →    /topsecret_split/{satellite_name}
 "message": ["este", "", "", "mensaje", ""]
 }
 
-######Crear un nuevo servicio /topsecret_split/ que acepte POST y GET. En el GET la respuesta deberá indicar la posición y el mensaje en caso que sea posible determinarlo y tener la misma estructura del ejemplo del Nivel 2. Caso contrario, deberá responder un mensaje de error indicando que no hay suficiente información.
+Crear un nuevo servicio /topsecret_split/ que acepte POST y GET. En el GET la respuesta deberá indicar la posición y el mensaje en caso que sea posible determinarlo y tener la misma estructura del ejemplo del Nivel 2. Caso contrario, deberá responder un mensaje de error indicando que no hay suficiente información.
