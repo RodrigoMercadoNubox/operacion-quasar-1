@@ -7,11 +7,11 @@ Desafío
 Como jefe de comunicaciones rebelde, tu misión es crear un programa en Golang que retorne la fuente y contenido del mensaje de auxilio. Para esto, cuentas con tres satélites que te permitirán triangular la posición, ¡pero cuidado! el mensaje puede no llegar completo a cada satélite debido al campo de asteroides frente a la nave.
 
 Posición de los satélites actualmente en servicio
-●	Kenobi: [-500, -200]
-●	Skywalker: [100, -100]
-●	Sato: [500, 100]
+*	Kenobi: [-500, -200]
+*	Skywalker: [100, -100]
+*	Sato: [500, 100]
 
-Nivel 1
+>Nivel 1
 Crear un programa con las siguientes firmas:
 
 // input: distancia al emisor tal cual se recibe en cada satélite
@@ -32,7 +32,7 @@ Consideraciones:
 *	Skywalker: [“este”, “”, “un”, “mensaje”]
 *	Sato: [“”, ””, ”es”, ””, ”mensaje”]
 
-Nivel 2
+>Nivel 2
 Crear una API REST, hostear esa API en un cloud computing libre (Google App Engine, Amazon AWS, etc), crear el servicio /topsecret/ en donde se pueda obtener la ubicación de la nave y el mensaje que emite.
 El servicio recibirá la información de la nave a través de un HTTP POST con un payload con el siguiente formato:
 
@@ -67,7 +67,8 @@ RESPONSE CODE: 200
 
 En caso que no se pueda determinar la posición o el mensaje, retorna:
 RESPONSE CODE: 404
-Nivel 3
+
+>Nivel 3
 Considerar que el mensaje ahora debe poder recibirse en diferentes POST al nuevo servicio
 /topsecret_split/, respetando la misma firma que antes. Por ejemplo:
 
