@@ -1,4 +1,4 @@
-# operacion-quasar
+# OPERACIÓN FUEGO DE QUASAR
 Han Solo ha sido recientemente nombrado General de la Alianza Rebelde y busca dar un gran golpe contra el Imperio Galáctico para reavivar la llama de la resistencia.
 
 El servicio de inteligencia rebelde ha detectado un llamado de auxilio de una nave portacarga imperial a la deriva en un campo de asteroides. El manifiesto de la nave es ultra clasificado, pero se rumorea que transporta raciones y armamento para una legión entera.
@@ -79,3 +79,10 @@ POST →    /topsecret_split/{satellite_name}
 }
 
 Crear un nuevo servicio /topsecret_split/ que acepte POST y GET. En el GET la respuesta deberá indicar la posición y el mensaje en caso que sea posible determinarlo y tener la misma estructura del ejemplo del Nivel 2. Caso contrario, deberá responder un mensaje de error indicando que no hay suficiente información.
+
+# ARQUITECTURA DE LA SOLUCIÓN
+Se creo un API REST en JAVA con SPRING BOOT Con la siguiente arquitecura:
+* Model: Se definen las clases(posicion, satelite, nave espacial etc) junto a sus propiedades.
+* Controller: Se definen los endpoint.
+* Services:  Logica de negocio para obtener la localización y mensaje secreto de los satelites.
+* Exceptions: Contiene metodo para controlar los errores controlados
